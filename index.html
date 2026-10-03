@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <title>Unit Converter</title>
+</head>
+
+<body>
+    <header>
+        <p>FAST * SIMPLE * ACCURATE</p>
+        <div>
+            <label for="">Theme</label>
+            <img src="icon-moon.svg" alt="" id="theme">
+        </div>
+    </header>
+    <main>
+        <section class="first">
+            <h1>Convert Anything.<span>Understand Everything.</span></h1>
+            <p>A friendly unit converter for everyday measurements.</p>
+        </section>
+
+        <section class="second">
+            <div class="initial">
+                <p>CONVERTER</p>
+                <h3>Make a Conversion</h3>
+            </div>
+            <div class="btns">
+                <button class="convertOption">Area</button>
+                <button class="convertOption">Length</button>
+                <button class="convertOption">Temperature</button>
+                <button class="convertOption">Volume</button>
+                <button class="convertOption">Mass</button>
+                <button class="convertOption">Speed</button>
+                <button class="convertOption">Time</button>
+            </div>
+            <div class="setup">
+                <div class="inputlabelselect">
+                    <label for="">From</label>
+                    <div class="values">
+                        <input type="text" name="" id="inputValue" value="">
+                        <select name="" id="input">
+                            <option value="m">Meters</option>
+                            <option value="cm">Centimeters</option>
+                            <option value="mm">Millimiters</option>
+                            <option value="km">Kilometers</option>
+                            <option value="in">Inches</option>
+                            <option value="ft">Feet</option>
+                            <option value="yd">Yards</option>
+                            <option value="mi">Miles</option>
+                        </select>
+                    </div>
+                </div>
+                <button id="trigger">⇄</button>
+                <div class="inputlabelselect">
+                    <label for="">To</label>
+                    <div class="values">
+                        <input type="text" name="" id="outputValue" value="">
+                        <select name="" id="output">
+                            <option value="m">Meters</option>
+                            <option value="cm">Centimeters</option>
+                            <option value="mm">Millimiters</option>
+                            <option value="km">Kilometers</option>
+                            <option value="in">Inches</option>
+                            <option value="ft">Feet</option>
+                            <option value="yd">Yards</option>
+                            <option value="mi">Miles</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="third">
+                <div>
+                    <p>RESULT</p>
+                    <p id="outputAnswer">No answer to display yet</p>
+                </div>
+                <button id="copy">Copy Result</button>
+            </div>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>

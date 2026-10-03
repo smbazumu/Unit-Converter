@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(rgb(219, 214, 214), rgb(150, 225, 150));
+    padding: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: "DM Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body.dark {
+    background: linear-gradient(rgb(33, 33, 33),rgb(191, 188, 188));
+    color: whitesmoke;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    width: 15px;
+    height: 15px;
+}
+
+header p, header label {
+    font-size: 14px;
+}
+
+.first h1 {
+    font-size: 70px;
+}
+
+.first span {
+    display: block;
+    color: gray;
+}
+
+.second {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    background: rgb(239, 238, 238);
+    padding: 10px;
+    border-radius: 10px;
+    height: 40vh;
+    width: 100%;
+}
+
+.second p {
+    font-size: 14px;
+}
+
+body.dark .second {
+    background: rgb(45, 44, 44);
+}
+
+.setup {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.initial {
+    margin-bottom: 20px;
+}
+
+.btns {
+    margin-bottom: 20px;
+}
+
+.btns button {
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    background: white;
+    font-family: "DM Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body.dark .btns button {
+    background: black;
+    color: white;
+}
+
+.third {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    color: white;
+    height: 6vh;
+    border-radius: 6px;
+    width: 100%;
+    margin-top: auto;
+    padding: 5px;
+}
+
+.third button {
+    margin-right: 5px;
+    background: rgb(232, 127, 145);
+    color: whitesmoke;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    font-family: "DM Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.inputlabelselect {
+    flex: 1;
+}
+
+.values {
+    display: flex;
+}
+
+.values input, .values select {
+    height: 40px;
+    background: white;
+    min-width: 0;
+    width: 100%;
+}
+
+body.dark .values input, body.dark .values select {
+    background: black;
+    color: white;
+}
+
+.values input {
+    border-radius: 7px 0 0 7px;
+    border: none;
+    border-right: 1px solid gray;
+    flex: 1.5;
+    padding-left: 10px;
+    font-family: "DM Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.values select {
+    border-radius: 0 7px 7px 0;
+    border: none;
+    flex: 1;
+    font-size: 15px;
+    font-family: "DM Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#trigger {
+    margin: 0 7px 7px 7px;
+    height: 25px;
+    align-self: end;
+    border-radius: 5px;
+    border: none;
+    width: 25px;
+    background: rgb(138, 214, 138);
+}
+
+#outputAnswer {
+    font-size: 20px;
+    font-weight: bold;
+    color: greenyellow;
+}
