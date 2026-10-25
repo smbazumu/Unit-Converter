@@ -68,6 +68,10 @@ body.dark .second {
     background: rgb(45, 44, 44);
 }
 
+.container {
+    width: 100%;
+}
+
 .setup {
     display: flex;
     margin-bottom: 1.25rem;
@@ -133,7 +137,7 @@ body.dark .btns button {
 
 .values input,
 .values select {
-    height: 2.5rem;
+    min-height: 2.5rem;
     background: white;
     min-width: 0;
     width: 100%;
@@ -185,6 +189,7 @@ body.dark .values select {
 @media (max-width: 48rem) {
     body {
         padding: 1.5rem;
+        max-width: 35rem;
     }
 
     .first h1 {
@@ -202,9 +207,10 @@ body.dark .values select {
     }
 }
 
-@media (max-width: 35rem) {
+@media (max-width: 30rem) {
     body {
         padding: 1rem;
+        max-width: 30rem;
     }
 
     .first h1 {
@@ -227,10 +233,12 @@ body.dark .values select {
         border-radius: 0.4375rem 0.4375rem 0 0;
         border-right: none;
         border-bottom: 0.0625rem solid gray;
+        min-height: 2.5rem;
     }
 
     .values select {
         border-radius: 0 0 0.4375rem 0.4375rem;
+        min-height: 2.5rem;
     }
 
     #trigger {
